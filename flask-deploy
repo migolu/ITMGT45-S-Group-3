@@ -1,0 +1,420 @@
+Windows User@MNLA-MACHINE MINGW64 ~
+$ cd aws
+
+Windows User@MNLA-MACHINE MINGW64 ~/aws
+$ chmod 400 MyFirstKeyPair.pem
+
+Windows User@MNLA-MACHINE MINGW64 ~/aws
+$ ssh -i "MyFirstKeyPair.pem" ec2-user@ec2-44-203-255-195.compute-1.amazonaws.com
+
+A newer release of "Amazon Linux" is available.
+  Version 2023.0.20230503:
+Run "/usr/bin/dnf check-release-update" for full release and version update info
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+Last login: Sat May 20 13:52:21 2023 from 121.58.232.104
+[ec2-user@ip-172-31-84-214 ~]$ sudo yum install git
+Last metadata expiration check: 1:42:13 ago on Sat May 20 12:24:06 2023.
+Package git-2.39.2-1.amzn2023.0.1.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+[ec2-user@ip-172-31-84-214 ~]$ sudo yum install python3
+Last metadata expiration check: 1:42:20 ago on Sat May 20 12:24:06 2023.
+Package python3-3.9.16-1.amzn2023.0.3.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+[ec2-user@ip-172-31-84-214 ~]$ sudo pip3 install Flask
+Requirement already satisfied: Flask in /usr/local/lib/python3.9/site-packages (2.3.2)
+Requirement already satisfied: importlib-metadata>=3.6.0 in /usr/local/lib/python3.9/site-packages (from Flask) (6.6.0)
+Requirement already satisfied: Werkzeug>=2.3.3 in /usr/local/lib/python3.9/site-packages (from Flask) (2.3.4)
+Requirement already satisfied: click>=8.1.3 in /usr/local/lib/python3.9/site-packages (from Flask) (8.1.3)
+Requirement already satisfied: blinker>=1.6.2 in /usr/local/lib/python3.9/site-packages (from Flask) (1.6.2)
+Requirement already satisfied: Jinja2>=3.1.2 in /usr/local/lib/python3.9/site-packages (from Flask) (3.1.2)
+Requirement already satisfied: itsdangerous>=2.1.2 in /usr/local/lib/python3.9/site-packages (from Flask) (2.1.2)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.9/site-packages (from importlib-metadata>=3.6.0->Flask) (3.15.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib64/python3.9/site-packages (from Jinja2>=3.1.2->Flask) (2.1.2)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[ec2-user@ip-172-31-84-214 ~]$ git clone https://github.com/migolu/ITMGT45-S-Group-3
+fatal: destination path 'ITMGT45-S-Group-3' already exists and is not an empty directory.
+[ec2-user@ip-172-31-84-214 ~]$ sudo cd path
+/usr/bin/cd: line 2: cd: path: No such file or directory
+[ec2-user@ip-172-31-84-214 ~]$ sudo cd digitalcafe
+/usr/bin/cd: line 2: cd: digitalcafe: No such file or directory
+[ec2-user@ip-172-31-84-214 ~]$ sudo cd
+[ec2-user@ip-172-31-84-214 ~]$ sudo yum update
+Last metadata expiration check: 1:57:12 ago on Sat May 20 12:24:06 2023.
+================================================================================
+WARNING:
+  A newer release of "Amazon Linux" is available.
+
+  Available Versions:
+
+  Version 2023.0.20230503:
+    Run the following command to upgrade to 2023.0.20230503:
+
+      dnf upgrade --releasever=2023.0.20230503
+
+    Release notes:
+     https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes.html
+
+================================================================================
+Dependencies resolved.
+Nothing to do.
+Complete!
+[ec2-user@ip-172-31-84-214 ~]$ sudo pip3 install gunicorn
+Collecting gunicorn
+  Downloading gunicorn-20.1.0-py3-none-any.whl (79 kB)
+     |████████████████████████████████| 79 kB 4.1 MB/s
+Requirement already satisfied: setuptools>=3.0 in /usr/lib/python3.9/site-packages (from gunicorn) (59.6.0)
+Installing collected packages: gunicorn
+Successfully installed gunicorn-20.1.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[ec2-user@ip-172-31-84-214 ~]$ ls
+ITMGT45-S-Group-3  aws
+[ec2-user@ip-172-31-84-214 ~]$ cd reporoot
+-bash: cd: reporoot: No such file or directory
+[ec2-user@ip-172-31-84-214 ~]$ cd aws
+[ec2-user@ip-172-31-84-214 aws]$ ls
+[ec2-user@ip-172-31-84-214 aws]$ cd\
+>
+[ec2-user@ip-172-31-84-214 ~]$ ls
+ITMGT45-S-Group-3  aws
+[ec2-user@ip-172-31-84-214 ~]$ cd ITMGT45-S-Group-3
+[ec2-user@ip-172-31-84-214 ITMGT45-S-Group-3]$ ls
+Intro-to-flask
+[ec2-user@ip-172-31-84-214 ITMGT45-S-Group-3]$ cd Intro-to-flask
+[ec2-user@ip-172-31-84-214 Intro-to-flask]$ ls
+digitalcafe
+[ec2-user@ip-172-31-84-214 Intro-to-flask]$ cd digitalcafe
+[ec2-user@ip-172-31-84-214 digitalcafe]$ ls
+__pycache__  authentication.py  ordermanagement.py
+app.py       database.py        templates
+[ec2-user@ip-172-31-84-214 digitalcafe]$ gunicorn app:app -p app.pid -b 0.0.0.0:8000 -D
+[ec2-user@ip-172-31-84-214 digitalcafe]$ ls
+__pycache__  authentication.py  ordermanagement.py
+app.py       database.py        templates
+[ec2-user@ip-172-31-84-214 digitalcafe]$ cat app.pid
+cat: app.pid: No such file or directory
+[ec2-user@ip-172-31-84-214 digitalcafe]$ cat app.py
+from flask import Flask, redirect
+from flask import render_template
+from flask import request
+from flask import session
+from bson.json_util import loads, dumps
+from flask import make_response
+import database as db
+import authentication
+import ordermanagement as om
+import logging
+
+app = Flask(__name__)
+app.secret_key = b's@g@d@c0ff33!'
+logging.basicConfig(level=logging.DEBUG)
+app.logger.setLevel(logging.INFO)
+
+
+@app.route('/')
+def index():
+    return render_template('index.html', page="Index")
+
+@app.route('/products')
+def products():
+    product_list = db.get_products()
+    return render_template('products.html', page="Products", product_list=product_list)
+
+@app.route('/productdetails')
+def productdetails():
+    code = request.args.get('code', '')
+    product = db.get_product(int(code))
+
+    return render_template('productdetails.html', code=code, product=product)
+
+@app.route('/branches')
+def branches():
+    branch_list = db.get_branches()
+    return render_template('branches.html', page="Branches", branch_list=branch_list)
+
+@app.route('/branchdetails')
+def branchdetails():
+    code = request.args.get('code','')
+    branch = db.get_branch(code)
+    return render_template('branchdetails.html', code=code, branch=branch)
+
+@app.route('/aboutus')
+def aboutus():
+    return render_template('aboutus.html', page="About Us")
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    return render_template('login.html')
+
+@app.route('/auth', methods = ['GET', 'POST'])
+def auth():
+    username = request.form.get('username')
+    password = request.form.get('password')
+
+    is_successful, user = authentication.login(username, password)
+    app.logger.info('%s', is_successful)
+    if(is_successful):
+        session["user"] = user
+        return redirect('/')
+    else:
+        return render_template('loginerror.html')
+@app.route('/logout')
+def logout():
+    session.pop("user",None)
+    session.pop("cart",None)
+    return redirect('/')
+
+@app.route('/changepassword', methods = ['GET', 'POST'])
+def changepassword():
+    user = db.get_user(session["user"]["username"])
+    current_password = request.form.get('currentpassword')
+    new_password = request.form.get('newpassword')
+    confirmed_password = request.form.get('confirmedpassword')
+    newpassword = None
+    error = None
+    if current_password != user["password"]:
+        error = "Error. Please try again"
+    elif new_password == None:
+        error = None
+    elif confirmed_password == new_password:
+        newpassword=db.change_password(session["user"]["username"],new_password)
+    elif confirmed_password != new_password:
+        error = "Error. Please try again"
+    return render_template('changepassword.html', newpassword=newpassword, error=error)
+
+@app.route('/addtocart')
+def addtocart():
+    code = request.args.get('code', '')
+    product = db.get_product(int(code))
+    item=dict()
+    # A click to add a product transl ates to a
+    # quantity of 1 for now
+
+    item["qty"] = 1
+    item["name"] = product["name"]
+    item["subtotal"] = product["price"]*item["qty"]
+
+    if(session.get("cart") is None):
+        session["cart"]={}
+
+    cart = session["cart"]
+    cart[code]=item
+    session["cart"]=cart
+    return redirect('/cart')
+
+@app.route('/cart')
+def cart():
+    return render_template('cart.html')
+
+@app.route('/remove')
+def remove():
+    code = request.args.get('code','')
+    cart.pop(code)
+    session["cart"] = cart
+    return redirect('/cart')
+
+@app.route('/checkout')
+def checkout():
+    # clear cart in session memory upon checkout
+    om.create_order_from_cart()
+    session.pop("cart",None)
+    return redirect('/ordercomplete')
+
+@app.route('/pastorders')
+def pastorders():
+    if (session.get("user") is not None):
+        orders = db.get_pastorders(session["user"]["username"])
+        return render_template('pastorders.html', orders=orders)
+    return orders
+@app.route('/ordercomplete')
+def ordercomplete():
+    return render_template('ordercomplete.html')
+
+@app.route('/api/products',methods=['GET'])
+def api_get_products():
+    resp = make_response( dumps(db.get_products()) )
+    resp.mimetype = 'application/json'
+    return resp
+
+@app.route('/api/products/<int:code>',methods=['GET'])
+def api_get_product(code):
+    resp = make_response(dumps(db.get_product(code)))
+    resp.mimetype = 'application/json'
+    return resp
+[ec2-user@ip-172-31-84-214 digitalcafe]$ gunicorn app:app -p app.pid -b 0.0.0.0:8000 -D
+[ec2-user@ip-172-31-84-214 digitalcafe]$ ls
+__pycache__  authentication.py  ordermanagement.py
+app.py       database.py        templates
+[ec2-user@ip-172-31-84-214 digitalcafe]$ gunicorn app:app -p app.pid -b 0.0.0.0:8000 -D
+[ec2-user@ip-172-31-84-214 digitalcafe]$ ls
+__pycache__  authentication.py  ordermanagement.py
+app.py       database.py        templates
+[ec2-user@ip-172-31-84-214 digitalcafe]$ cat app.pid
+cat: app.pid: No such file or directory
+[ec2-user@ip-172-31-84-214 digitalcafe]$ sudo gunicorn app:app -p app.pid -b 0.0.0.0:8000 -D
+[ec2-user@ip-172-31-84-214 digitalcafe]$ ls
+__pycache__  authentication.py  ordermanagement.py
+app.py       database.py        templates
+[ec2-user@ip-172-31-84-214 digitalcafe]$ cat app.py
+from flask import Flask, redirect
+from flask import render_template
+from flask import request
+from flask import session
+from bson.json_util import loads, dumps
+from flask import make_response
+import database as db
+import authentication
+import ordermanagement as om
+import logging
+
+app = Flask(__name__)
+app.secret_key = b's@g@d@c0ff33!'
+logging.basicConfig(level=logging.DEBUG)
+app.logger.setLevel(logging.INFO)
+
+
+@app.route('/')
+def index():
+    return render_template('index.html', page="Index")
+
+@app.route('/products')
+def products():
+    product_list = db.get_products()
+    return render_template('products.html', page="Products", product_list=product_list)
+
+@app.route('/productdetails')
+def productdetails():
+    code = request.args.get('code', '')
+    product = db.get_product(int(code))
+
+    return render_template('productdetails.html', code=code, product=product)
+
+@app.route('/branches')
+def branches():
+    branch_list = db.get_branches()
+    return render_template('branches.html', page="Branches", branch_list=branch_list)
+
+@app.route('/branchdetails')
+def branchdetails():
+    code = request.args.get('code','')
+    branch = db.get_branch(code)
+    return render_template('branchdetails.html', code=code, branch=branch)
+
+@app.route('/aboutus')
+def aboutus():
+    return render_template('aboutus.html', page="About Us")
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    return render_template('login.html')
+
+@app.route('/auth', methods = ['GET', 'POST'])
+def auth():
+    username = request.form.get('username')
+    password = request.form.get('password')
+
+    is_successful, user = authentication.login(username, password)
+    app.logger.info('%s', is_successful)
+    if(is_successful):
+        session["user"] = user
+        return redirect('/')
+    else:
+        return render_template('loginerror.html')
+@app.route('/logout')
+def logout():
+    session.pop("user",None)
+    session.pop("cart",None)
+    return redirect('/')
+
+@app.route('/changepassword', methods = ['GET', 'POST'])
+def changepassword():
+    user = db.get_user(session["user"]["username"])
+    current_password = request.form.get('currentpassword')
+    new_password = request.form.get('newpassword')
+    confirmed_password = request.form.get('confirmedpassword')
+    newpassword = None
+    error = None
+    if current_password != user["password"]:
+        error = "Error. Please try again"
+    elif new_password == None:
+        error = None
+    elif confirmed_password == new_password:
+        newpassword=db.change_password(session["user"]["username"],new_password)
+    elif confirmed_password != new_password:
+        error = "Error. Please try again"
+    return render_template('changepassword.html', newpassword=newpassword, error=error)
+
+@app.route('/addtocart')
+def addtocart():
+    code = request.args.get('code', '')
+    product = db.get_product(int(code))
+    item=dict()
+    # A click to add a product transl ates to a
+    # quantity of 1 for now
+
+    item["qty"] = 1
+    item["name"] = product["name"]
+    item["subtotal"] = product["price"]*item["qty"]
+
+    if(session.get("cart") is None):
+        session["cart"]={}
+
+    cart = session["cart"]
+    cart[code]=item
+    session["cart"]=cart
+    return redirect('/cart')
+
+@app.route('/cart')
+def cart():
+    return render_template('cart.html')
+
+@app.route('/remove')
+def remove():
+    code = request.args.get('code','')
+    cart.pop(code)
+    session["cart"] = cart
+    return redirect('/cart')
+
+@app.route('/checkout')
+def checkout():
+    # clear cart in session memory upon checkout
+    om.create_order_from_cart()
+    session.pop("cart",None)
+    return redirect('/ordercomplete')
+
+@app.route('/pastorders')
+def pastorders():
+    if (session.get("user") is not None):
+        orders = db.get_pastorders(session["user"]["username"])
+        return render_template('pastorders.html', orders=orders)
+    return orders
+@app.route('/ordercomplete')
+def ordercomplete():
+    return render_template('ordercomplete.html')
+
+@app.route('/api/products',methods=['GET'])
+def api_get_products():
+    resp = make_response( dumps(db.get_products()) )
+    resp.mimetype = 'application/json'
+    return resp
+
+@app.route('/api/products/<int:code>',methods=['GET'])
+def api_get_product(code):
+    resp = make_response(dumps(db.get_product(code)))
+    resp.mimetype = 'application/json'
+    return resp
+[ec2-user@ip-172-31-84-214 digitalcafe]$ ps -aef | grep gunicorn
+ec2-user   30444   29204  0 14:38 pts/1    00:00:00 grep --color=auto gunicorn
+[ec2-user@ip-172-31-84-214 digitalcafe]$
